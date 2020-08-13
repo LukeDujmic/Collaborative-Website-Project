@@ -87,6 +87,79 @@ body
     /* Navigation Styles */
     nav
     {
-        
+        position: fixed;
+        max-width: 1920px;
+        width: 100%;
+        background-color: black;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
     }
+
+    nav > a
+    {
+
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    nav > a > div
+    {
+        text-align: center;
+        text-decoration: none;
+        padding: 2px;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        width: 17%;
+        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        font-size: 0.5em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        padding: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+    }
+
+    /*  other nav styles
+    
+            text-align: center;
+        text-decoration: none;
+        padding: 2px;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        width: 17%;
+        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        font-size: 0.5em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        padding: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+
+    */
+
+    nav > a > div:hover
+    {
+        transform: scale(1.1);
+    }
+
+    /* Content Styles */
+
+
+    /* Footer Styles */
+
+
 }
