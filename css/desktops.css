@@ -76,7 +76,7 @@ body
 
     /* Header Styles  */
     header{
-        font-size: 50px;
+        font-size: 1.4em;
         text-align: center;
         text-shadow: rgb(112, 76, 10) 0px 0px 4px;
         background-color: black;
@@ -90,7 +90,15 @@ body
     }
     header > h1{
 position: inherit;
-
+top: 10%;
+left: 25%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 50%;
     }
 
     /* Navigation Styles */
@@ -110,7 +118,7 @@ position: inherit;
         width: 100%;
         height: 80%;
         position: relative;
-        bottom:30%;
+        bottom:15%;
     }
     nav > p > a 
     {
@@ -121,19 +129,19 @@ position: inherit;
         align-items: center;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.123);
-        box-shadow: 0px 0px 15px rgb(151, 58, 14);
-        font-size: 0.7em;
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 0.65em;
         color: rgb(255, 255, 255);
         transition: 0.33s; 
         margin: 1px;
         text-decoration: none;
         margin-bottom: 1%;
         border-radius: 10px 0px 10px 0px;
-        width: 17%;
+        width: 20%;
     }
 
 
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.1);
     }
@@ -394,7 +402,7 @@ height: 95%;
 
     /* Header Styles  */
     header{
-        font-size: 50px;
+        font-size: 1.6em;
         text-align: center;
         text-shadow: rgb(112, 76, 10) 0px 0px 4px;
         background-color: black;
@@ -408,7 +416,15 @@ height: 95%;
     }
     header > h1{
 position: inherit;
-
+top: 20%;
+left: 30%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 40%;
     }
 
     /* Navigation Styles */
@@ -428,7 +444,7 @@ position: inherit;
         width: 100%;
         height: 80%;
         position: relative;
-        bottom:30%;
+        bottom:7%;
     }
     nav > p > a 
     {
@@ -439,7 +455,7 @@ position: inherit;
         align-items: center;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.123);
-        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
         font-size: 0.7em;
         color: rgb(255, 255, 255);
         transition: 0.33s; 
@@ -451,9 +467,10 @@ position: inherit;
     }
 
 
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
     }
     /*footer styles*/
     footer{
@@ -713,7 +730,7 @@ height: 95%;
 
     /* Header Styles  */
     header{
-        font-size: 50px;
+        font-size: 2em;
         text-align: center;
         text-shadow: rgb(112, 76, 10) 0px 0px 4px;
         background-color: black;
@@ -727,9 +744,16 @@ height: 95%;
     }
     header > h1{
 position: inherit;
-
+top: 10%;
+left: 35%;
     }
-
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 30%;
+    }
     /* Navigation Styles */
     nav
     {
@@ -747,7 +771,7 @@ position: inherit;
         width: 100%;
         height: 80%;
         position: relative;
-        bottom:30%;
+        bottom:5%;
     }
     nav > p > a 
     {
@@ -758,7 +782,7 @@ position: inherit;
         align-items: center;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.123);
-        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
         font-size: 0.7em;
         color: rgb(255, 255, 255);
         transition: 0.33s; 
@@ -769,10 +793,10 @@ position: inherit;
         width: 17%;
     }
 
-
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
     }
     /*footer styles*/
     footer{
@@ -1032,7 +1056,7 @@ height: 95%;
 
     /* Header Styles  */
     header{
-        font-size: 50px;
+        font-size: 1.8em;
         text-align: center;
         text-shadow: rgb(112, 76, 10) 0px 0px 4px;
         background-color: black;
@@ -1046,7 +1070,15 @@ height: 95%;
     }
     header > h1{
 position: inherit;
-
+top: 15%;
+left: 32%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 30%;
     }
 
     /* Navigation Styles */
@@ -1077,7 +1109,7 @@ position: inherit;
         align-items: center;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.123);
-        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
         font-size: 0.7em;
         color: rgb(255, 255, 255);
         transition: 0.33s; 
@@ -1088,10 +1120,10 @@ position: inherit;
         width: 17%;
     }
 
-
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
     }
     /*footer styles*/
     footer{
@@ -1349,7 +1381,7 @@ height: 95%;
 
     /* Header Styles  */
     header{
-        font-size: 50px;
+        font-size: 3em;
         text-align: center;
         text-shadow: rgb(112, 76, 10) 0px 0px 4px;
         background-color: black;
@@ -1363,7 +1395,15 @@ height: 95%;
     }
     header > h1{
 position: inherit;
-
+top: 1%;
+left: 30%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 20%;
     }
 
     /* Navigation Styles */
@@ -1383,7 +1423,7 @@ position: inherit;
         width: 100%;
         height: 80%;
         position: relative;
-        bottom:30%;
+        bottom:10%;
     }
     nav > p > a 
     {
@@ -1394,8 +1434,8 @@ position: inherit;
         align-items: center;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.123);
-        box-shadow: 0px 0px 15px rgb(151, 58, 14);
-        font-size: 0.7em;
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 1em;
         color: rgb(255, 255, 255);
         transition: 0.33s; 
         margin: 1px;
@@ -1405,10 +1445,10 @@ position: inherit;
         width: 17%;
     }
 
-
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
     }
     /*footer styles*/
     footer{
