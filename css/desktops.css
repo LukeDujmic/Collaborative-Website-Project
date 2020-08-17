@@ -1,0 +1,1599 @@
+@font-face
+{
+    font-family: 'Orb';
+    src: url(../fonts/Orbitron.ttf);
+}
+
+html body{
+    font-family: 'Orb';
+}
+
+@media only screen and (max-width: 480px)
+{
+
+body
+{
+    background-color: rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 50px;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:30%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+
+    nav > a > div:hover
+    {
+        transform: scale(1.1);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 110%;
+        width: 100%;
+        height: 10%;
+        z-index: 2;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 30%;
+    width: 100%;
+}
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 50%;
+    height: 30%;
+    width: 100%;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 80%;
+    height: 30%;
+    width: 100%;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+}
+
+@media only screen and (min-width: 481px ) and (max-width:768px)
+{
+    body
+{
+    background-color:rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 50px;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:30%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+
+    nav > a > div:hover
+    {
+        transform: scale(1.1);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 110%;
+        width: 100%;
+        height: 10%;
+        z-index: 2;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 30%;
+    width: 100%;
+}
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 50%;
+    height: 30%;
+    width: 100%;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 80%;
+    height: 30%;
+    width: 100%;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px)
+{
+    body
+{
+    background-color:rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 50px;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:30%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+
+    nav > a > div:hover
+    {
+        transform: scale(1.1);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 110%;
+        width: 100%;
+        height: 10%;
+        z-index: 2;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 30%;
+    width: 100%;
+}
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 50%;
+    height: 30%;
+    width: 100%;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 80%;
+    height: 30%;
+    width: 100%;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px)
+{
+    body
+{
+    background-color:rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 50px;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:30%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+
+    nav > a > div:hover
+    {
+        transform: scale(1.1);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 110%;
+        width: 100%;
+        height: 10%;
+        z-index: 2;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 30%;
+    width: 100%;
+}
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 50%;
+    height: 30%;
+    width: 100%;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 80%;
+    height: 30%;
+    width: 100%;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+}
+
+
+@media only screen and (min-width: 1201px)
+{
+    body
+{
+    background-color: rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 50px;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:30%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 15px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+
+    nav > a > div:hover
+    {
+        transform: scale(1.1);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 110%;
+        width: 100%;
+        height: 10%;
+        z-index: 2;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 30%;
+    width: 100%;
+}
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 50%;
+    height: 30%;
+    width: 100%;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 80%;
+    height: 30%;
+    width: 100%;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+}   
