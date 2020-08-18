@@ -744,7 +744,7 @@ height: 95%;
     }
     header > h1{
 position: inherit;
-top: 10%;
+top: 0%;
 left: 35%;
     }
     
@@ -802,25 +802,76 @@ left: 35%;
     footer{
         position: absolute;
         left: 0px;
-        top: 110%;
+        top: 170%;
         width: 100%;
-        height: 10%;
-        z-index: 2;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 1300px;
         background-color: black;
     }
 /*high end section styles*/
 .high{
     position: absolute;
     top: 20%;
-    height: 30%;
+    height: 40%;
     width: 100%;
 }
+
 .high>.highbig{
 position: absolute;
 left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+.high>h1{
+    font-size: 1.4em;
 }
 /*this creates the right half of the high end*/
 .high>.highsmol{
@@ -838,6 +889,19 @@ height: 95%;
     width: 49%;
     
 }
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height: 100% ;
+    position: relative;
+    left: 30%;
+}
 
 .high>.highsmol>.high2{
     position: absolute;
@@ -846,6 +910,19 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+.high>.highsmol>.high2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .high>.highsmol>.high3{
@@ -856,7 +933,19 @@ height: 95%;
     width: 49%;
     
 }
-
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 .high>.highsmol>.high4{
     position: absolute;
     right: 0%;
@@ -865,14 +954,31 @@ height: 95%;
     width: 49%;
     
 }
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 
 /*mid tier section styles*/
 .med{
     position: absolute;
-    top: 50%;
-    height: 30%;
+    top: 70%;
+    height: 40%;
     width: 100%;
+}
+.med>h1{
+    font-size: 1.4em;
 }
 .med>.medbig{
 position: absolute;
@@ -880,6 +986,20 @@ left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.med>.medbig>img{
+    height: 100%;
+    position: relative;
+    left: 10%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 /*this creates the right half of the mid tier*/
 .med>.medsmol{
@@ -899,6 +1019,20 @@ height: 95%;
     
 }
 
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .med>.medsmol>.med2{
     position: absolute;
     right: 0%;
@@ -906,6 +1040,20 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .med>.medsmol>.med3{
@@ -916,6 +1064,20 @@ height: 95%;
     width: 49%;
     
 }
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .med>.medsmol>.med4{
     position: absolute;
@@ -925,13 +1087,29 @@ height: 95%;
     width: 49%;
     
 }
+.med>.medsmol>.med4>img{
+position: relative;
+left: 15%;
+height: 100%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 /*entry tier section styles*/
 .entry{
     position: absolute;
-    top: 80%;
-    height: 30%;
+    top: 120%;
+    height: 40%;
     width: 100%;
+}
+.entry>h1{
+    font-size: 1.4em;
 }
 .entry>.entrybig{
 position: absolute;
@@ -939,6 +1117,19 @@ left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.entry>.entrybig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 /*this creates the right half of the high end*/
 .entry>.entrysmol{
@@ -957,6 +1148,19 @@ height: 95%;
     width: 49%;
     
 }
+.entry>.entrysmol>.entry1>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 .entry>.entrysmol>.entry2{
     position: absolute;
@@ -967,6 +1171,20 @@ height: 95%;
     
 }
 
+.entry>.entrysmol>.entry2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .entry>.entrysmol>.entry3{
     position: absolute;
     left: 0%;
@@ -975,6 +1193,19 @@ height: 95%;
     width: 49%;
     
 }
+.entry>.entrysmol>.entry3>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .entry>.entrysmol>.entry4{
     position: absolute;
@@ -984,7 +1215,19 @@ height: 95%;
     width: 49%;
     
 }
-
+.entry>.entrysmol>.entry4>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 }
 
@@ -1129,25 +1372,73 @@ left: 32%;
     footer{
         position: absolute;
         left: 0px;
-        top: 110%;
+        top: 170%;
         width: 100%;
-        height: 10%;
-        z-index: 2;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 1550px;
         background-color: black;
     }
 /*high end section styles*/
 .high{
     position: absolute;
     top: 20%;
-    height: 30%;
+    height: 40%;
     width: 100%;
 }
+
 .high>.highbig{
 position: absolute;
 left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 80%;
+position: relative;
+top: 20%;
 }
 /*this creates the right half of the high end*/
 .high>.highsmol{
@@ -1165,6 +1456,19 @@ height: 95%;
     width: 49%;
     
 }
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height: 100% ;
+    position: relative;
+    left: 30%;
+}
 
 .high>.highsmol>.high2{
     position: absolute;
@@ -1173,6 +1477,19 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+.high>.highsmol>.high2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .high>.highsmol>.high3{
@@ -1183,7 +1500,19 @@ height: 95%;
     width: 49%;
     
 }
-
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 .high>.highsmol>.high4{
     position: absolute;
     right: 0%;
@@ -1192,13 +1521,27 @@ height: 95%;
     width: 49%;
     
 }
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 
 /*mid tier section styles*/
 .med{
     position: absolute;
-    top: 50%;
-    height: 30%;
+    top: 70%;
+    height: 40%;
     width: 100%;
 }
 .med>.medbig{
@@ -1207,6 +1550,20 @@ left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.med>.medbig>img{
+    height: 100%;
+    position: relative;
+    left: 10%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 /*this creates the right half of the mid tier*/
 .med>.medsmol{
@@ -1226,6 +1583,20 @@ height: 95%;
     
 }
 
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .med>.medsmol>.med2{
     position: absolute;
     right: 0%;
@@ -1233,6 +1604,20 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .med>.medsmol>.med3{
@@ -1243,6 +1628,20 @@ height: 95%;
     width: 49%;
     
 }
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .med>.medsmol>.med4{
     position: absolute;
@@ -1252,12 +1651,25 @@ height: 95%;
     width: 49%;
     
 }
+.med>.medsmol>.med4>img{
+position: relative;
+left: 15%;
+height: 100%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 /*entry tier section styles*/
 .entry{
     position: absolute;
-    top: 80%;
-    height: 30%;
+    top: 120%;
+    height: 40%;
     width: 100%;
 }
 .entry>.entrybig{
@@ -1266,6 +1678,19 @@ left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.entry>.entrybig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 /*this creates the right half of the high end*/
 .entry>.entrysmol{
@@ -1284,6 +1709,19 @@ height: 95%;
     width: 49%;
     
 }
+.entry>.entrysmol>.entry1>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 .entry>.entrysmol>.entry2{
     position: absolute;
@@ -1294,6 +1732,20 @@ height: 95%;
     
 }
 
+.entry>.entrysmol>.entry2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .entry>.entrysmol>.entry3{
     position: absolute;
     left: 0%;
@@ -1302,6 +1754,19 @@ height: 95%;
     width: 49%;
     
 }
+.entry>.entrysmol>.entry3>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .entry>.entrysmol>.entry4{
     position: absolute;
@@ -1310,6 +1775,19 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+.entry>.entrysmol>.entry4>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 }
 
@@ -1415,7 +1893,7 @@ left: 30%;
         left: 0px;
         background-color: black;
         bottom: 0%;
-        z-index: 1;
+        z-index: 2;
     }
 
     nav >P{
@@ -1442,7 +1920,7 @@ left: 30%;
         text-decoration: none;
         margin-bottom: 1%;
         border-radius: 10px 0px 10px 0px;
-        width: 17%;
+        width: 13%;
     }
 
     nav > p > a:hover
@@ -1454,25 +1932,73 @@ left: 30%;
     footer{
         position: absolute;
         left: 0px;
-        top: 110%;
+        top: 170%;
         width: 100%;
-        height: 10%;
-        z-index: 2;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 2000px;
         background-color: black;
     }
 /*high end section styles*/
 .high{
     position: absolute;
     top: 20%;
-    height: 30%;
+    height: 40%;
     width: 100%;
 }
+
 .high>.highbig{
 position: absolute;
 left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 80%;
+position: relative;
+top: 20%;
 }
 /*this creates the right half of the high end*/
 .high>.highsmol{
@@ -1490,6 +2016,19 @@ height: 95%;
     width: 49%;
     
 }
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height: 100% ;
+    position: relative;
+    left: 30%;
+}
 
 .high>.highsmol>.high2{
     position: absolute;
@@ -1498,6 +2037,19 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+.high>.highsmol>.high2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .high>.highsmol>.high3{
@@ -1508,7 +2060,19 @@ height: 95%;
     width: 49%;
     
 }
-
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 .high>.highsmol>.high4{
     position: absolute;
     right: 0%;
@@ -1517,13 +2081,27 @@ height: 95%;
     width: 49%;
     
 }
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 
 /*mid tier section styles*/
 .med{
     position: absolute;
-    top: 50%;
-    height: 30%;
+    top: 70%;
+    height: 40%;
     width: 100%;
 }
 .med>.medbig{
@@ -1532,6 +2110,20 @@ left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.med>.medbig>img{
+    height: 100%;
+    position: relative;
+    left: 10%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 /*this creates the right half of the mid tier*/
 .med>.medsmol{
@@ -1551,6 +2143,20 @@ height: 95%;
     
 }
 
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .med>.medsmol>.med2{
     position: absolute;
     right: 0%;
@@ -1558,6 +2164,20 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .med>.medsmol>.med3{
@@ -1568,6 +2188,20 @@ height: 95%;
     width: 49%;
     
 }
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .med>.medsmol>.med4{
     position: absolute;
@@ -1577,12 +2211,25 @@ height: 95%;
     width: 49%;
     
 }
+.med>.medsmol>.med4>img{
+position: relative;
+left: 15%;
+height: 100%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 /*entry tier section styles*/
 .entry{
     position: absolute;
-    top: 80%;
-    height: 30%;
+    top: 120%;
+    height: 40%;
     width: 100%;
 }
 .entry>.entrybig{
@@ -1591,6 +2238,19 @@ left: 2.5%;
 top: 2.5%;
 width: 45%;
 height: 95%;
+}
+.entry>.entrybig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 /*this creates the right half of the high end*/
 .entry>.entrysmol{
@@ -1609,6 +2269,19 @@ height: 95%;
     width: 49%;
     
 }
+.entry>.entrysmol>.entry1>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 .entry>.entrysmol>.entry2{
     position: absolute;
@@ -1619,6 +2292,20 @@ height: 95%;
     
 }
 
+.entry>.entrysmol>.entry2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .entry>.entrysmol>.entry3{
     position: absolute;
     left: 0%;
@@ -1627,6 +2314,19 @@ height: 95%;
     width: 49%;
     
 }
+.entry>.entrysmol>.entry3>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .entry>.entrysmol>.entry4{
     position: absolute;
@@ -1635,5 +2335,18 @@ height: 95%;
     height: 47.5%;
     width: 49%;
     
+}
+.entry>.entrysmol>.entry4>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 }   
