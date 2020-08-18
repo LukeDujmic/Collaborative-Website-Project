@@ -7,7 +7,6 @@ function init()
     {
         
     }
-    console.log(document.body.firstElementChild.firstElementChild.textContent == "Contact Us");
 }
 setTimeout(() => {
     init();
