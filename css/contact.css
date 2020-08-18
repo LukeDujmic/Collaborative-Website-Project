@@ -141,9 +141,16 @@
         border-radius: 10px 0px 10px 0px;
     }
 
-    body input#problem
+    body #problem
     {
-        height: 30px;
+        max-width: 60%;
+        max-height: 100px;
+        background-color: rgb(66, 66, 66);
+        box-shadow: 0px 0px 6px 1px rgb(151, 58, 14);
+        border: rgb(151, 58, 14) solid 0.5px;
+        color: white;
+        margin-top: 1%;
+        padding: 1%;
     }
 
     body input[type=submit]
@@ -152,6 +159,7 @@
         width: 30%;
         font-family: 'orb';
         font-size: 1em;
+        margin-top: 2%;
     }
 
     body input[type=submit]:hover
@@ -320,17 +328,25 @@
         border-radius: 10px 0px 10px 0px;
     }
 
-    body input#problem
+    body #problem
     {
-        height: 30px;
+        max-width: 60%;
+        max-height: 100px;
+        background-color: rgb(66, 66, 66);
+        box-shadow: 0px 0px 6px 1px rgb(151, 58, 14);
+        border: rgb(151, 58, 14) solid 0.5px;
+        color: white;
+        margin-top: 1%;
+        padding: 1%;
     }
 
     body input[type=submit]
     {
         height: auto;
         width: 30%;
-        font-family: 'Orb';
+        font-family: 'orb';
         font-size: 1em;
+        margin-top: 2%;
     }
 
     body input[type=submit]:hover
@@ -503,17 +519,25 @@
         border-radius: 10px 0px 10px 0px;
     }
 
-    body input#problem
+    body #problem
     {
-        height: 30px;
+        max-width: 60%;
+        max-height: 100px;
+        background-color: rgb(66, 66, 66);
+        box-shadow: 0px 0px 6px 1px rgb(151, 58, 14);
+        border: rgb(151, 58, 14) solid 0.5px;
+        color: white;
+        margin-top: 1%;
+        padding: 1%;
     }
 
     body input[type=submit]
     {
         height: auto;
         width: 30%;
-        font-family: 'Orb';
+        font-family: 'orb';
         font-size: 1em;
+        margin-top: 2%;
     }
 
     body input[type=submit]:hover
