@@ -2044,9 +2044,10 @@ width: 45%;
 height: 95%;
 }
 .med>.medbig>img{
-    height: 100%;
+    height: 90%;
     position: relative;
     left: 10%;
+    top: 20%;
 }
 
 .med>.medbig>img:hover{
@@ -2604,9 +2605,10 @@ width: 45%;
 height: 95%;
 }
 .med>.medbig>img{
-    height: 100%;
+    height: 80%;
     position: relative;
     left: 10%;
+    top:20%;
 }
 
 .med>.medbig>img:hover{
