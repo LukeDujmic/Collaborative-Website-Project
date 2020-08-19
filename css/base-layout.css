@@ -115,16 +115,22 @@ body
         min-height: 50px;
     }
 
-    nav > a
+    nav > p > a
     {
 
         text-decoration: none;
         vertical-align: middle;
+        
     }
 
-    nav > a > div
+    nav > p > a:hover
     {
-        height: 15px;
+        text-shadow: 0px 0px 6px rgb(255, 81, 0);
+    }
+
+    nav > p > a
+    {
+        height: 20px;
         text-align: center;
         text-decoration: none;
         padding: 2px;
@@ -132,26 +138,26 @@ body
         justify-content: center;
         align-items: center;
         margin: auto;
-        background-color: rgba(255, 127, 95, 0.151);
-        width: 43%;
+        background-color: rgba(255, 255, 255, 0.123);
+        width: 25%;
         box-shadow: 0px 0px 5px rgb(151, 58, 14);
-        font-size: 0.6em;
-        color: rgb(255, 255, 255);
+        font-size: 1.1em;
+        color: rgb(255, 217, 160);
         transition: 0.33s; 
         margin: 3px;
         padding: 1px;
-        margin-left: 2%;
+        margin-left: 30px;
         text-decoration: none;
         margin-bottom: 1%;
         border-radius: 10px 0px 10px 0px;
     }
 
 
-
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.1);
         box-shadow: 0px 0px 10px rgb(211, 73, 10);
+
     }
     /* */
     /* */
@@ -363,7 +369,7 @@ body
 
     }
 
-    nav > a
+    nav > p > a
     {
 
         text-decoration: none;
@@ -371,14 +377,14 @@ body
         
     }
 
-    nav > a:hover
+    nav > p > a:hover
     {
         text-shadow: 0px 0px 6px rgb(255, 81, 0);
     }
 
-    nav > a > div
+    nav > p > a
     {
-        height: 15px;
+        height: 20px;
         text-align: center;
         text-decoration: none;
         padding: 2px;
@@ -387,10 +393,10 @@ body
         align-items: center;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.123);
-        width: 27.5%;
+        width: 30%;
         box-shadow: 0px 0px 5px rgb(151, 58, 14);
         font-size: 1.1em;
-        color: rgb(255, 255, 255);
+        color: rgb(255, 217, 160);
         transition: 0.33s; 
         margin: 3px;
         padding: 1px;
@@ -423,7 +429,7 @@ body
 
     */
 
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.075) translateY(-2px);
         box-shadow: 0px 0px 10px rgb(211, 73, 10);
@@ -648,7 +654,7 @@ body
 
     }
 
-    nav > a
+    nav > p > a
     {
 
         text-decoration: none;
@@ -656,12 +662,12 @@ body
         
     }
 
-    nav > a:hover
+    nav > p > a:hover
     {
         text-shadow: 0px 0px 6px rgb(255, 81, 0);
     }
 
-    nav > a > div
+    nav > p > a
     {
         height: 20px;
         text-align: center;
@@ -685,30 +691,8 @@ body
         border-radius: 10px 0px 10px 0px;
     }
 
-    /*  other nav styles
 
-            text-align: center;
-        text-decoration: none;
-        padding: 2px;
-        display: inline-flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-        background-color: rgba(255, 255, 255, 0.123);
-        width: 17%;
-        box-shadow: 0px 0px 15px rgb(151, 58, 14);
-        font-size: 0.5em;
-        color: rgb(255, 255, 255);
-        transition: 0.33s; 
-        margin: 1px;
-        padding: 1px;
-        text-decoration: none;
-        margin-bottom: 1%;
-        border-radius: 10px 0px 10px 0px;
-
-    */
-
-    nav > a > div:hover
+    nav > p > a:hover
     {
         transform: scale(1.075) translateY(-2px);
         box-shadow: 0px 0px 10px rgb(211, 73, 10);

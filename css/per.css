@@ -2328,27 +2328,27 @@ top: 20%;
         grid-row-end: 5;
     }
 */
-    ::-webkit-scrollbar {
-        width: 2.2%;
-    }
-    
-    /* Track */
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: rgb(36, 36, 36); 
-        border: rgb(158, 75, 20) solid 1px;
-        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
-        border-radius: 2px;
-    }
-    
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #282b31; 
-    }
+::-webkit-scrollbar {
+    width: 2.2%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px 3px rgb(0, 0, 0); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+    border: rgb(158, 75, 20) solid 1px;
+    box-shadow: orange 0px 0px 8px 2px, inset rgb(107, 56, 8) 0px 0px 6px 2px;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #141922; 
+}
 
     /* Header Styles  */
     header{
@@ -2382,44 +2382,61 @@ left: 30%;
     {
         position: fixed;
         width: 100%;
-        height: 10%;
-        left: 0px;
         background-color: black;
-        bottom: 0%;
-        z-index: 2;
-    }
-
-    nav >P{
-        text-align: center;
-        width: 100%;
-        height: 80%;
-        position: relative;
-        bottom:10%;
-    }
-    nav > p > a 
-    {
-        text-align: center;
-        text-decoration: none;
-        display: inline-flex;
-        justify-content: space-around;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.123);
-        box-shadow: 0px 0px 5px rgb(151, 58, 14);
-        font-size: 1em;
-        color: rgb(255, 255, 255);
-        transition: 0.33s; 
-        margin: 1px;
+        box-shadow: black 0px -5px 15px;
+        padding-bottom: 10px;
+    }
+
+    nav > p > a
+    {
+
         text-decoration: none;
-        margin-bottom: 1%;
-        border-radius: 10px 0px 10px 0px;
-        width: 13%;
+        vertical-align: middle;
+        
     }
 
     nav > p > a:hover
     {
-        transform: scale(1.1);
+        text-shadow: 0px 0px 6px rgb(255, 81, 0);
+    }
+
+    nav > p > a
+    {
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        width: 30%;
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 1.1em;
+        color: rgb(255, 217, 160);
+        transition: 0.33s; 
+        margin: 3px;
+        padding: 1px;
+        margin-left: 30px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+    }
+
+
+    nav > p > a:hover
+    {
+        transform: scale(1.075) translateY(-2px);
         box-shadow: 0px 0px 10px rgb(211, 73, 10);
+
     }
     /*footer styles*/
     footer{
