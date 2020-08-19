@@ -1,0 +1,2844 @@
+@font-face
+{
+    font-family: 'Orb';
+    src: url(../fonts/Orbitron.ttf);
+}
+
+html body{
+    font-family: 'Orb';
+}
+
+@media only screen and (max-width: 480px)
+{
+
+body
+{
+    background-color: rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 1em;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+top: 30%;
+left: 35%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 50%;
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:15%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 0.65em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 20%;
+    }
+
+
+    nav > p > a:hover
+    {
+        transform: scale(1.1);
+    }
+      /*footer styles*/
+      footer{
+        position: absolute;
+        left: 0px;
+        top: 170%;
+        width: 100%;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 1550px;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 40%;
+    width: 100%;
+}
+
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 50%;
+position: relative;
+top: 20%;
+}
+.high>h1{
+    font-size: 1.4em;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height:50% ;
+    position: relative;
+    left: 0%;
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high2>img{
+    height: 50%;
+    position: relative;
+    left: 0%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 0%;
+    height: 50%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 0%;
+    height: 50%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 70%;
+    height: 40%;
+    width: 100%;
+}
+.med>h1{
+    font-size: 1.4em;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.med>.medbig>img{
+    height: 60%;
+    position: relative;
+    left: 5%;
+    top: 15%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    
+    width: 45%;
+    height: 90%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 0%;
+    height: 50%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 5%;
+    height: 50%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 0%;
+    height: 50%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med4>img{
+position: relative;
+left: 0%;
+height: 50%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 120%;
+    height: 40%;
+    width: 100%;
+}
+.entry>h1{
+    font-size: 1.4em;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.entry>.entrybig>img{
+height: 50%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry1>img{
+    height: 60%;
+    position: relative;
+    left: 0%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2>img{
+    height: 45%;
+    position: relative;
+    left: 0%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry3>img{
+    height: 50%;
+    position: relative;
+    left: 0%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry4>img{
+    height: 45%;
+    position: relative;
+    left: 0%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+}
+
+@media only screen and (min-width: 481px ) and (max-width:768px)
+{
+    body
+{
+    background-color:rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 1.6em;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+top: 20%;
+left: 30%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 40%;
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:7%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+
+    nav > p > a:hover
+    {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
+    }
+      /*footer styles*/
+      footer{
+        position: absolute;
+        left: 0px;
+        top: 170%;
+        width: 100%;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 1650px;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 40%;
+    width: 100%;
+}
+
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 60%;
+position: relative;
+top: 20%;
+}
+.high>h1{
+    font-size: 1.4em;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height: 60% ;
+    position: relative;
+    left: 1%;
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high2>img{
+    height: 60%;
+    position: relative;
+    left: 1%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 5%;
+    height: 60%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 5%;
+    height: 60%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 70%;
+    height: 40%;
+    width: 100%;
+}
+.med>h1{
+    font-size: 1.4em;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.med>.medbig>img{
+    height: 60%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 1%;
+    height: 65%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 5%;
+    height: 65%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 1%;
+    height: 60%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med4>img{
+position: relative;
+left: 1%;
+height: 60%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 120%;
+    height: 40%;
+    width: 100%;
+}
+.entry>h1{
+    font-size: 1.4em;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.entry>.entrybig>img{
+height: 60%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry1>img{
+    height: 60%;
+    position: relative;
+    left: 2%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2>img{
+    height: 50%;
+    position: relative;
+    left: 1%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry3>img{
+    height: 60%;
+    position: relative;
+    left: 1%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry4>img{
+    height: 55%;
+    position: relative;
+    left: 1%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px)
+{
+    body
+{
+    background-color:rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 2em;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+top: 0%;
+left: 35%;
+font-size: 1.5em;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 30%;
+    }
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:5%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+    nav > p > a:hover
+    {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 170%;
+        width: 100%;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 1650px;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 40%;
+    width: 100%;
+}
+
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 75%;
+position: relative;
+top: 20%;
+}
+.high>h1{
+    font-size: 1.4em;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height: 70% ;
+    position: relative;
+    left: 5%;
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high2>img{
+    height: 70%;
+    position: relative;
+    left: 5%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 5%;
+    height: 70%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 5%;
+    height: 70%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 70%;
+    height: 40%;
+    width: 100%;
+}
+.med>h1{
+    font-size: 1.4em;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.med>.medbig>img{
+    height: 75%;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 5%;
+    height: 70%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 5%;
+    height: 70%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 5%;
+    height: 70%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med4>img{
+position: relative;
+left: 1%;
+height: 70%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 120%;
+    height: 40%;
+    width: 100%;
+}
+.entry>h1{
+    font-size: 1.4em;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.entry>.entrybig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 20%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry1>img{
+    height: 80%;
+    position: relative;
+    left: 2%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2>img{
+    height: 70%;
+    position: relative;
+    left: 1%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry3>img{
+    height: 80%;
+    position: relative;
+    left: 1%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry4>img{
+    height: 70%;
+    position: relative;
+    left: 5%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px)
+{
+    body
+{
+    background-color:rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 1.8em;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+top: 15%;
+left: 32%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 30%;
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:30%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 17%;
+    }
+
+    nav > p > a:hover
+    {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 170%;
+        width: 100%;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 1650px;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 40%;
+    width: 100%;
+}
+
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height: 100% ;
+    position: relative;
+    left: 30%;
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 70%;
+    height: 40%;
+    width: 100%;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.med>.medbig>img{
+    height: 100%;
+    position: relative;
+    left: 10%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med4>img{
+position: relative;
+left: 25%;
+height: 100%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 120%;
+    height: 40%;
+    width: 100%;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.entry>.entrybig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry1>img{
+    height: 90%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2>img{
+    height: 90%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry3>img{
+    height: 90%;
+    position: relative;
+    left: 30%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry4>img{
+    height: 90%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+}
+
+
+@media only screen and (min-width: 1201px)
+{
+    body
+{
+    background-color: rgb(29, 29, 29);
+    color: rgb(156, 78, 14);
+    padding-top: 0px;
+    overflow-x: hidden;
+}
+
+
+/*
+#grid
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        overflow-wrap: break-word;
+    }
+
+    header
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    article
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+*/
+    ::-webkit-scrollbar {
+        width: 2.2%;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 8px rgb(41, 41, 41); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36); 
+        border: rgb(158, 75, 20) solid 1px;
+        box-shadow: orange 0px 0px 4px, inset rgb(107, 56, 8) 0px 0px 3px;
+        border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #282b31; 
+    }
+
+    /* Header Styles  */
+    header{
+        font-size: 2.5em;
+        text-align: center;
+        text-shadow: rgb(112, 76, 10) 0px 0px 4px;
+        background-color: black;
+        box-shadow: black 0px 0px 3px 1px;
+
+            position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20%;
+    }
+    header > h1{
+position: inherit;
+top: 0%;
+left: 30%;
+    }
+    
+    header>.logo>img{
+        position: absolute;
+        left:0%;
+        top: 0%;
+        width: 20%;
+    }
+
+    /* Navigation Styles */
+    nav
+    {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        background-color: black;
+        bottom: 0%;
+        z-index: 2;
+    }
+
+    nav >P{
+        text-align: center;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        bottom:10%;
+    }
+    nav > p > a 
+    {
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.123);
+        box-shadow: 0px 0px 5px rgb(151, 58, 14);
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        transition: 0.33s; 
+        margin: 1px;
+        text-decoration: none;
+        margin-bottom: 1%;
+        border-radius: 10px 0px 10px 0px;
+        width: 13%;
+    }
+
+    nav > p > a:hover
+    {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px rgb(211, 73, 10);
+    }
+    /*footer styles*/
+    footer{
+        position: absolute;
+        left: 0px;
+        top: 170%;
+        width: 100%;
+        height: 22%;
+        z-index: 3;
+        background-color: black;
+    }
+    footer
+    {
+        background-color: black;
+        box-shadow: black 0px -2px 5px;
+
+    }
+    footer > p
+    {
+        color: rgb(129, 77, 16);
+        position: relative;
+        padding: 0.5%;
+        padding-bottom: 5px;
+
+    }
+    footer > #SM
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    footer > #SM > a
+    {
+        padding-left: 10px;
+    }
+
+    #navSpace
+    {
+        height: 2000px;
+        background-color: black;
+    }
+/*high end section styles*/
+.high{
+    position: absolute;
+    top: 20%;
+    height: 40%;
+    width: 100%;
+}
+
+.high>.highbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.high>.highbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.high>.highbig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+/*this creates the right half of the high end*/
+.high>.highsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 45%;
+    height: 95%;
+}
+.high>.highsmol>.high1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high1>img{
+    height: 100% ;
+    position: relative;
+    left: 30%;
+}
+
+.high>.highsmol>.high2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.high>.highsmol>.high2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.high>.highsmol>.high3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.high>.highsmol>.high4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.high>.highsmol>.high4>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.high>.highsmol>.high4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+/*mid tier section styles*/
+.med{
+    position: absolute;
+    top: 70%;
+    height: 40%;
+    width: 100%;
+}
+.med>.medbig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.med>.medbig>img{
+    height: 100%;
+    position: relative;
+    left: 10%;
+}
+
+.med>.medbig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the mid tier*/
+.med>.medsmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.med>.medsmol>.med1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med1>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.med>.medsmol>.med2>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.med>.medsmol>.med3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med3>img{
+    position: relative;
+    left: 30%;
+    height: 100%;
+}
+.med>.medsmol>.med3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.med>.medsmol>.med4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.med>.medsmol>.med4>img{
+position: relative;
+left: 30%;
+height: 100%;
+}
+.med>.medsmol>.med4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*entry tier section styles*/
+.entry{
+    position: absolute;
+    top: 120%;
+    height: 40%;
+    width: 100%;
+}
+.entry>.entrybig{
+position: absolute;
+left: 2.5%;
+top: 2.5%;
+width: 45%;
+height: 95%;
+}
+.entry>.entrybig>img{
+height: 80%;
+position: relative;
+top: 20%;
+}
+.entry>.entrybig>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/*this creates the right half of the high end*/
+.entry>.entrysmol{
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    
+    width: 45%;
+    height: 95%;
+}
+.entry>.entrysmol>.entry1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry1>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry1>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+
+.entry>.entrysmol>.entry2>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry2>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.entry>.entrysmol>.entry3{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry3>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}.entry>.entrysmol>.entry3>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.entry>.entrysmol>.entry4{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 47.5%;
+    width: 49%;
+    
+}
+.entry>.entrysmol>.entry4>img{
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+.entry>.entrysmol>.entry4>img:hover{
+    box-shadow: 0px 0px 4px rgb(211, 73, 10);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+}   
